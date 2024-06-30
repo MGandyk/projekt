@@ -1,0 +1,15 @@
+{% extends 'django_app/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h2>HOME</h2>
+        {{userStatus}}<br>
+
+            <div class="btn=group" role="group" aria-label="Basic example">
+                <a href="{% url 'public_page' %}"><button type="button" class="btn btn-primary">Public</button></a>
+                <a href="{% url 'private_page' %}"><button type="button" class="btn btn-success">Private</button></a>
+                <a href="{% url 'privateclass_page' %}"><button type="button" class="btn btn-warning">Private Class</button></a>
+            </div>
+            
+    </div>
+{% endblock %}
